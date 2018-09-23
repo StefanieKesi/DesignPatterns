@@ -1,4 +1,4 @@
-package staticProxy;
+package staticProxyPattern;
 
 /**
  * 代理角色

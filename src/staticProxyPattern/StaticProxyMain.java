@@ -1,4 +1,4 @@
-package staticProxy;
+package staticProxyPattern;
 
 /**
  * 1.创建真实角色
