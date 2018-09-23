@@ -7,22 +7,12 @@ public class MainDemo {
 
     public static void main(String[] args){
 
+        Hungry hungry = Hungry.getInstance();
+        LazyAndThreadUnsafe lazyAndThreadUnsafe = LazyAndThreadUnsafe.getInstance();
+        LazyAndThreadSafe lazyAndThreadSafe = LazyAndThreadSafe.getInstance();
+        DoubleCheckedLocking doubleCheckedLocking = DoubleCheckedLocking.getInstance();
+        StaticInternalClass staticInternalClass = StaticInternalClass.getInstance();
         EnumSingle enumSingle = EnumSingle.INSTANCE;
-
-        enumSingle.setName("Stefanie Kesi");
-
-        System.out.println(enumSingle.getName());
-
-        EnumSingle enumSingle1 = EnumSingle.INSTANCE;
-
-        enumSingle1.setName("Stefanie Sun");
-
-        System.out.println(enumSingle.getName());
-
-        System.out.println(enumSingle1.getName());
-
-
-
 
     }
 }

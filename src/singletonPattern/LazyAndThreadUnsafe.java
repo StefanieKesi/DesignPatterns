@@ -6,7 +6,7 @@ package singletonPattern;
  * 不加synchronized锁，线程不安全
  *
  */
-public class LanHanAndThreadUnsafe {
+public class LazyAndThreadUnsafe {
 
     private String name;
 
@@ -18,13 +18,13 @@ public class LanHanAndThreadUnsafe {
         return this.name;
     }
 
-    public static LanHanAndThreadUnsafe instance;
+    public static LazyAndThreadUnsafe instance;
 
-    private LanHanAndThreadUnsafe(){}
+    private LazyAndThreadUnsafe(){}
 
-    public static LanHanAndThreadUnsafe getInstance(){
+    public static LazyAndThreadUnsafe getInstance(){
         if(instance==null){
-            instance = new LanHanAndThreadUnsafe();
+            instance = new LazyAndThreadUnsafe();
         }
         return instance;
     }

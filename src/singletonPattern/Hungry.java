@@ -7,13 +7,13 @@ package singletonPattern;
  *
  * 个人理解，因为式饿汉，饿了，等不及用的时候才生成对象实例，而是对象加载就要生成
  */
-public class EHan {
+public class Hungry {
 
-    private static EHan instance = new EHan(); // 类初始化时立即加载
+    private static Hungry instance = new Hungry(); // 类初始化时立即加载
 
-    private EHan(){}
+    private Hungry(){}
 
-    public static EHan getInstance(){
+    public static Hungry getInstance(){
         return instance;
     }
 }

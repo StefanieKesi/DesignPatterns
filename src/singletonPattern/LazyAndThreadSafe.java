@@ -8,19 +8,19 @@ package singletonPattern;
  *
  * 个人理解，懒，在调用时才会新建对象，节省内存空间
  */
-public class LanHanAndThreadSafe {
+public class LazyAndThreadSafe {
 
-    private static LanHanAndThreadSafe instance;
+    private static LazyAndThreadSafe instance;
 
-    private LanHanAndThreadSafe(){}
+    private LazyAndThreadSafe(){}
 
     /**
      * class锁机制，每次只有一个线程可以调用getInstance()方法
      *
      */
-    public static synchronized LanHanAndThreadSafe getInstance(){
+    public static synchronized LazyAndThreadSafe getInstance(){
         if (instance == null){
-            instance = new LanHanAndThreadSafe();
+            instance = new LazyAndThreadSafe();
         }
         return instance;
     }
